@@ -41,3 +41,20 @@ var randomInsult = "Ты " + randomBodyPart + " " + randomAdjective + " " + rand
 
 console.log(randomInsult);
 console.log(["Ты", randomBodyPart, randomAdjective, randomWord + "!!!"].join(" ")); // .join
+
+// exercise 2,3
+
+var randomBodyParts = ["рука", "нога", "голова"];
+var randomAdjectives = ["жирная", "глупая", "кривая"];
+var randomBodyAnimals = ["хвост", "морда", "лапа", "яйца"]
+var randomWords = ["слона", "жирафа", "коровы", "сурка", "таракана"];
+
+var randomBodyPart = randomBodyParts[Math.floor(Math.random() * randomBodyParts.length)];
+var randomAdjective = randomAdjectives[Math.floor(Math.random() * randomAdjectives.length)];
+var randomBodyAnimal = randomBodyAnimals[Math.floor(Math.random() * randomBodyAnimals.length)];
+var randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
+
+var randomInsult = "У тебя " + randomBodyPart + " еще более " + randomAdjective + ", чем " + randomBodyAnimal + " у " + randomWord;
+
+console.log(randomInsult);
+console.log(["У тебя", randomBodyPart, "еще более", randomAdjective + ",", "чем", randomBodyAnimal, "у", randomWord].join(" ")); // .join
