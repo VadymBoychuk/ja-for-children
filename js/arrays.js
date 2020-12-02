@@ -25,3 +25,4 @@ var randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
 var randomInsult = "У тебя " + randomBodyPart + " словно " + randomAdjective + " " + randomWord + "!!!";
 
 console.log(randomInsult);
+console.log(["У тебя", randomBodyPart, "словно", randomAdjective, randomWord + "!!!"].join(" ")); // .join
