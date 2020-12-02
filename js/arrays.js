@@ -54,7 +54,15 @@ var randomAdjective = randomAdjectives[Math.floor(Math.random() * randomAdjectiv
 var randomBodyAnimal = randomBodyAnimals[Math.floor(Math.random() * randomBodyAnimals.length)];
 var randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
 
-var randomInsult = "У тебя " + randomBodyPart + " еще более " + randomAdjective + ", чем " + randomBodyAnimal + " у " + randomWord;
+var randomInsult = "У тебя " + randomBodyPart + " еще более " + 
+    randomAdjective + ", чем " + randomBodyAnimal + " у " + randomWord;
 
 console.log(randomInsult);
-console.log(["У тебя", randomBodyPart, "еще более", randomAdjective + ",", "чем", randomBodyAnimal, "у", randomWord].join(" ")); // .join
+console.log(["У тебя", randomBodyPart, "еще более", 
+    randomAdjective + ",", "чем", randomBodyAnimal, "у", randomWord].join(" ")); // .join
+
+// exercise 4
+
+let arr = [3, 2, 1];
+
+console.log([arr[0], "больше, чем", arr[1], "больше, чем", arr[2]].join(" "));
