@@ -26,3 +26,18 @@ var randomInsult = "У тебя " + randomBodyPart + " словно " + randomAd
 
 console.log(randomInsult);
 console.log(["У тебя", randomBodyPart, "словно", randomAdjective, randomWord + "!!!"].join(" ")); // .join
+
+// exercise 1
+
+var randomBodyParts = ["грязный", "унылый", "вонючий"];
+var randomAdjectives = ["кусок", "шмат", '"я не умею ругаться" недоносок'];
+var randomWords = ["говна", "мяса", "обезьяны", "плазмы"];
+
+var randomBodyPart = randomBodyParts[Math.floor(Math.random() * randomBodyParts.length)];
+var randomAdjective = randomAdjectives[Math.floor(Math.random() * randomAdjectives.length)];
+var randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
+
+var randomInsult = "Ты " + randomBodyPart + " " + randomAdjective + " " + randomWord + "!!!";
+
+console.log(randomInsult);
+console.log(["Ты", randomBodyPart, randomAdjective, randomWord + "!!!"].join(" ")); // .join
