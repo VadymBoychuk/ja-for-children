@@ -10,7 +10,7 @@ var phrases = [
     "Компьтер говорит нет"
 ]
 
-console.log(phrases[Math.floor(Math.random() * 5)]);
+console.log(phrases[Math.floor(Math.random() * phrases.length)]);
 
 //дразнилка
 
